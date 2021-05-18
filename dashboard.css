@@ -290,7 +290,7 @@ a.article:hover {
 }
 .ultime {
   font-size: 16px;
-  color: rgb(126, 125, 125);
+  color: rgb(165, 164, 164);
   font-weight: bold;
   margin-top: -25px;
 }
@@ -303,7 +303,7 @@ a.article:hover {
 }
 .ulteacher {
   font-size: 11px;
-  color: rgb(126, 125, 125);
+  color: rgb(165, 164, 164);
   margin-top: -15px;
   margin-left: 15px;
   font-weight: bold;
@@ -540,6 +540,103 @@ textarea.meta-fix-departure-calendar {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+/* ==================YOURCOURSES=================== */
+.course {
+  background-color: white;
+  border-radius: 10px;
+  /* margin-top: 5px; */
+  /* margin: 10px; */
+}
+.your-courses-text {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.course-profile-pic {
+  width: 30px;
+  float: left;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.course-numbers {
+  font-size: 12px;
+  color: #999;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.save-search-icons {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin-left: 70px;
+  position: relative;
+  bottom: 10px;
+}
+.fa-bookmark {
+  margin-left: 15px;
+}
+.fa-search {
+  margin-left: 15px;
+}
+.fa-bookmark:hover {
+  cursor: pointer;
+}
+.fa-search:hover {
+  cursor: pointer;
+}
+.mycourse {
+  width: 80%;
+  height: 50%;
+  background-color: white;
+  /* box-shadow: 5px 5px 25px 5px rgb(179, 178, 178); */
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 20px;
+  /* margin: auto; */
+}
+.mycourse:hover {
+  box-shadow: 5px 5px 25px 5px rgb(179, 178, 178);
+  cursor: pointer;
+}
+.fa-plus-square {
+  color: rgb(255, 196, 0);
+  margin: 10%;
+}
+.fa-plus-square:hover {
+  cursor: pointer;
+  color: #ff7b00;
+}
+.painting-pic {
+  width: 50px;
+  border-radius: 20px;
+  float: left;
+  margin-right: 30px;
+}
+.course-level {
+  color: #27ae60;
+  font-weight: 300;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.course-name {
+  font-size: 17px;
+  font-weight: bolder;
+  color: black;
+  margin-left: 15px;
+}
+.course-instructor {
+  font-size: small;
+  margin-left: 10px;
+}
+.course-instructor-img {
+  width: 40px;
+  border-radius: 100%;
+  border: 2px solid #7386d5;
 }
 /* =================TASKS======================= */
 .tasksdiv {

@@ -218,3 +218,8 @@ var chart2 = new CanvasJS.Chart
 
     chart1.render();
     chart2.render();
+
+//    ===========================BOOKMARK==============================
+    $('#bookmark').on('click',function(){
+        
+    });   
