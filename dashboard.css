@@ -5,7 +5,7 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
   font-family: "Poppins", sans-serif;
-  background: #fafafa;
+  background: hsl(177, 100%, 96%);
 }
 
 p {
@@ -540,4 +540,69 @@ textarea.meta-fix-departure-calendar {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+/* =================TASKS======================= */
+.tasksdiv {
+  padding: 3%;
+}
+.tasksdiv_inner {
+  background-color: white;
+  border: 5px solid #d2d2d3;
+  padding-left: 20px;
+}
+.task-title {
+  margin-left: 10px;
+}
+.task-due-date {
+  margin-top: -15px;
+  margin-left: 27px;
+  color: blueviolet;
+  font-size: 14px;
+  font-weight: bold;
+}
+.task-pic-div {
+  margin-left: 25px;
+  margin-top: -10px;
+}
+.tasks-pic {
+  width: 30px;
+  float: left;
+  border-radius: 100%;
+  margin-right: 15px;
+  border: 2px solid rgb(176, 131, 248);
+}
+.task-teacher-name {
+  margin-left: 10px !important;
+  margin-top: 10px !important;
+  font-size: 10px;
+  color: #999;
+  font-weight: bold;
+}
+.task-subject-btn {
+  background-color: #27ae60;
+  color: white;
+  border-radius: 999px;
+  border-style: none;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.see-all-tasks {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  color: #6d7fcc;
+  margin-right: 20px;
+}
+.see-all-tasks:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* =================GOALS======================= */
+.goalsdiv {
+  padding: 5%;
+}
+.goalsdiv_inner {
+  background-color: white;
+  border: 5px solid #d2d2d3;
 }
