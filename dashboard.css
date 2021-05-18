@@ -254,3 +254,67 @@ a.article:hover {
     display: none;
   }
 }
+.menubar {
+  position: relative;
+  bottom: 30px;
+  /* padding-top: -5px !important;
+  padding-bottom: -5px !important; */
+}
+/* ===============================UPCOMINGLESSONS======================== */
+.upcominglessons {
+  width: 100%;
+  height: 65px;
+  border-radius: 10px;
+  background-color: #aee4f5;
+  /* opacity: 50%; */
+  margin-bottom: 5px;
+}
+.teacher-pic {
+  width: 40px;
+  border-radius: 100%;
+  /* float: right; */
+  margin-left: 70px;
+  margin-top: 10px;
+
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+.uldate {
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
+  margin-top: 8px;
+}
+.ultime {
+  font-size: 16px;
+  color: rgb(126, 125, 125);
+  font-weight: bold;
+  margin-top: -25px;
+}
+.ulsubject {
+  font-size: 14px;
+  color: black;
+  margin-top: 12px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+.ulteacher {
+  font-size: 11px;
+  color: rgb(126, 125, 125);
+  margin-top: -15px;
+  margin-left: 15px;
+  font-weight: bold;
+}
+/* ==========================LEADERBOARD============================== */
+.leaderboardtext {
+  font-weight: bold;
+  color: black;
+  margin-top: 5px;
+}
+.leaderboardtable {
+  /* height: 100px; */
+  /* overflow: scroll; */
+}
