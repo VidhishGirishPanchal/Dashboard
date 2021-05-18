@@ -87,3 +87,134 @@ function moveDate(param) {
 
     renderDate();
 }
+
+// =============================SPLINE AREA CHART=============================
+// window.onload = function () {
+
+//     var options = {
+//         exportEnabled: true,
+//         animationEnabled: true,
+//         title: {
+//             text: "Spent Time(hrs/week)"
+//         },
+//         axisY: {
+//                         title: "Hours in Week",
+                       
+//                         suffix: "hr",
+//                         prefix: ""
+//                     },
+//         axisX: {
+//             title: "Weeks",   
+//             suffix: "w"   
+//         },
+//         data: [
+//         {
+//             type: "splineArea",
+//             dataPoints: [
+//                 { y: 10 },
+//                 { y: 6 },
+//                 { y: 14 },
+//                 { y: 12 },
+//                 { y: 19 },
+//                 { y: 14 },
+//                 { y: 26 },
+//                 { y: 10 },
+//                 { y: 22 }
+//             ]
+//         }
+//         ]
+//     };
+//     $("#chartContainer1").CanvasJSChart(options);
+    
+//     }
+
+    var chart1 = new CanvasJS.Chart
+    ("chartContainer1", {
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+            text: "Spent Time(hrs/week)"
+        },
+        axisY: {
+                        title: "Hours in Week",
+                       
+                        suffix: "hr",
+                        prefix: ""
+                    },
+        axisX: {
+            title: "Weeks",   
+            suffix: "w"   
+        },
+        data: [
+        {
+            type: "splineArea",
+            dataPoints: [
+                { y: 10 },
+                { y: 6 },
+                { y: 14 },
+                { y: 12 },
+                { y: 19 },
+                { y: 14 },
+                { y: 26 },
+                { y: 10 },
+                { y: 22 }
+            ]
+        }
+        ]
+    });
+// ======================PIECHART======================
+// window.onload = function() {
+
+//     var options = {
+//         title: {
+//             text: "Website Traffic Source"
+//         },
+//         data: [{
+//                 type: "pie",
+//                 startAngle: 45,
+//                 showInLegend: "true",
+//                 legendText: "{label}",
+//                 indexLabel: "{label} ({y})",
+//                 yValueFormatString:"#,##0.#"%"",
+//                 dataPoints: [
+//                     { label: "Organic", y: 36 },
+//                     { label: "Email Marketing", y: 31 },
+//                     { label: "Referrals", y: 7 },
+//                     { label: "Twitter", y: 7 },
+//                     { label: "Facebook", y: 6 },
+//                     { label: "Google", y: 10 },
+//                     { label: "Others", y: 3 }
+//                 ]
+//         }]
+//     };
+//     $("#chartContainer2").CanvasJSChart(options);
+    
+//     }
+var chart2 = new CanvasJS.Chart
+    ("chartContainer2", {
+        exportEnabled: true,
+        animationEnabled: true,
+        title: {
+            text: "Skills"
+        },
+        data: [{
+                type: "pie",
+                startAngle: 45,
+                showInLegend: "true",
+                legendText: "{label}",
+                indexLabel: "{label} ({y})",
+                yValueFormatString:"#,##0.#"%"",
+                dataPoints: [
+                    { label: "Math", y: 36 },
+                    { label: "Sci", y: 31 },
+                    { label: "Eng", y: 7 },
+                    { label: "His", y: 7 },
+                    { label: "Geo", y: 6 },
+                    { label: "Com", y: 10 },
+                    { label: "Art", y: 3 }
+                ]
+        }]
+    });
+
+    chart1.render();
+    chart2.render();
