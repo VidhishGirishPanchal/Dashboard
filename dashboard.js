@@ -220,6 +220,10 @@ var chart2 = new CanvasJS.Chart
     chart2.render();
 
 //    ===========================BOOKMARK==============================
-    $('#bookmark').on('click',function(){
+    // $('#bookmark').on('click',function(){
         
-    });   
+    // });   
+// =====================NotificationModal=====================
+$('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  })

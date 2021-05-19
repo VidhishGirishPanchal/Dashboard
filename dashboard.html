@@ -19,6 +19,9 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e41a6e67ca.js" crossorigin="anonymous"></script>
+    <!-- Aniamtion on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -82,7 +85,7 @@
                     <a href="#">Contact</a>
                 </li> -->
             </ul>
-
+            <!-- <div data-aos="fade"> -->
             <ul class="list-unstyled CTAs">
                 <li>
                    <img src="img/manyellow.svg" alt="" class="manimg"> <br>
@@ -93,6 +96,7 @@
                    
                 </li>
             </ul>
+            <!-- </div> -->
         </nav>
 
         <!-- Page Content  -->
@@ -115,9 +119,10 @@
                                 
                                 <i class="far fa-heart"></i>
                             </li>
-                            <li class="">
-                               
-                                <i class="far fa-bell"></i>
+                            <li class="" data-toggle="modal" data-target="#exampleModal">
+                                
+                                <i class="far fa-bell"><span class="badge">3</span></i>
+                                
                             </li>
                             <li class="">
                                 <div>
@@ -131,6 +136,49 @@
                           
                         </ul>
                     </div>
+
+                    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Notifications</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div style="padding: 5px">
+            <p class="notif-day">Today</p>
+                <div style="display: flex; margin-bottom: 7px;">
+                <div class="notif-logo"><p class="notif-logo-text">MC</p></div>
+                <p class="notif-text">Margo Corn has invited you to the project Untitled.</p>
+                <p class="notif-time time1">2 min</p>
+                </div>
+
+                <div style="display: flex;">
+                    <div class="notif-logo" style="background-color: rgb(158, 224, 3);"><p class="notif-logo-text">EH</p></div>
+                    <p class="notif-text">Elsa Hoffman removed you from Web Dolphin.</p>
+                    <p class="notif-time time2">1 hr</p>
+                    </div>
+
+            <p class="notif-day" style="margin-top: 17px;">Yesterday</p>
+                    <div style="display: flex; margin-bottom: 7px;">
+                    <div class="notif-logo" style="background-color: darkorange;"><p class="notif-logo-text">NP</p></div>
+                    <p class="notif-text">Tia Jamy accepted your invitation to project <br> Untitled 2.</p>
+                    <p class="notif-time time3">14:12</p>
+                    </div>
+    
+                
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
                     
                     <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
@@ -152,7 +200,7 @@
             </nav>
             <h1 style="margin-top: -50px;">Hi Champ!</h1>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 container-fluid" style="margin-bottom: 30px;">
+                <div class="col-lg-4 col-md-6 col-sm-12 container-fluid" style="margin-bottom: 30px;" data-aos="fade">
                     Upcoming Lessons
                     <div class="upcominglessons container-fluid">
                         <div style="display: flex; margin-left: 20px;">
@@ -165,7 +213,7 @@
                     <div class="upcominglessons container-fluid">    
                     <div style="display: flex; margin-left: 20px;">
                             <div><p class="uldate">June 11</p> <p  class="ultime">5 pm</p></div>
-                            <div><p class="ulsubject">English</p> <p class="ulteacher">Tam Rava</p></div>
+                            <div><p class="ulsubject">English</p> <p class="ulteacher">Margo Saw</p></div>
                             <div><img align="right" src="img/teacher2.jpeg" alt="teacher-pic" class="teacher-pic"></div>
                             </div>
                         </div>
@@ -173,13 +221,13 @@
                         <div class="upcominglessons container-fluid">
                         <div style="display: flex; margin-left: 20px;">
                                 <div><p class="uldate">June 12</p> <p  class="ultime">6 pm</p></div>
-                                <div><p class="ulsubject">Science</p> <p class="ulteacher">Pam Gava</p></div>
+                                <div><p class="ulsubject">Science</p> <p class="ulteacher">Ria Sharma</p></div>
                                 <div><img align="right" src="img/teacher3.png" alt="teacher-pic" class="teacher-pic"></div>
                                 </div>
                             </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 container">
+                <div class="col-lg-4 col-md-6 col-sm-12 container" data-aos="fade">
                 <p class="leaderboardtext">Leaderboard</p>
                     <table class="table leaderboardtable border">
                         <thead>
@@ -225,7 +273,7 @@
                       </table>
                 </div>
 <!-- ----------------------------------CALENDAR--------------------------------- -->
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade">
                    <div class="calendardiv">
                     <div class="icalendar">
                         <div class="icalendar__month">
@@ -368,7 +416,13 @@
             
         </div>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:300,
+        duration: 1000
+    });
+  </script>
     <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
     <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
     <!-- jQuery CDN - Slim version (=without AJAX) -->
