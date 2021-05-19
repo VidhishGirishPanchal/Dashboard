@@ -210,7 +210,7 @@ a.article:hover {
 }
 .getlinkbtn {
   background-color: rgb(255, 166, 0);
-  margin: 5px auto;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -228,6 +228,7 @@ a.article:hover {
 }
 .fa-bell {
   margin-right: 20px;
+  /* color: rgb(255, 166, 1); */
 }
 .fa-heart:hover {
   cursor: pointer;
@@ -961,7 +962,8 @@ textarea.meta-fix-departure-calendar {
 .fa-chevron-right {
   position: relative;
   top: 25px;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-right: 5px;
 }
 .fa-chevron-right:hover {
   color: rgb(86, 116, 252);
@@ -988,4 +990,4 @@ textarea.meta-fix-departure-calendar {
   border: 3px solid green;
   /* border-left: none; */
 }
-/* =======================CIRCLE PROGRESSBAR ====================================*/
+/* ===========================================================*/

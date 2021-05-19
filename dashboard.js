@@ -219,12 +219,38 @@ var chart2 = new CanvasJS.Chart
     chart1.render();
     chart2.render();
 
-//    ===========================BOOKMARK==============================
-    // $('#bookmark').on('click',function(){
-        
-    // });   
+  
 // =====================NotificationModal=====================
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
 
+//    ===========================BOOKMARK==============================
+
+$("#bookmark").on('click',function(){
+    if ($("#bookmark").hasClass("far") ) {
+        $("#bookmark").removeClass('far').addClass('fas');
+    }
+    else{
+        $("#bookmark").removeClass('fas').addClass('far');
+    }
+}); 
+
+//    ===========================HEARTICON==============================
+
+$("#heart").on('click',function(){
+    if ($("#heart").hasClass("far") ) {
+        $("#heart").removeClass('far').addClass('fas').css("color", "red");
+    }
+    else{
+        $("#heart").removeClass('fas').addClass('far').css("color","black");
+    }
+});
+
+//    ===========================BELL-NOTIFICATION-BADGE==============================
+$("#bell").on('click',function(){
+    if ($("span").hasClass("badge") ) {
+        $("#badge").remove();
+    }
+    
+});
