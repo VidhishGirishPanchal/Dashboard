@@ -227,3 +227,4 @@ var chart2 = new CanvasJS.Chart
 $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
+
